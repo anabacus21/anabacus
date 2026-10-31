@@ -3828,7 +3828,7 @@
     <!-- =================================================================== -->
     <!-- GLOBAL ADMIN TOAST NOTIFICATION -->
     <div id="global-admin-toast" class="fixed top-4 right-4 z-[100005] bg-slate-950/95 text-white border-2 border-amber-400 rounded-2xl px-4 py-2.5 shadow-2xl flex items-center gap-2.5 text-xs font-extrabold backdrop-blur-md">
-        <span id="global-admin-toast-text">⚡ Instant State Live on GitHub in 1875ms! Committing standalone index.html...</span>
+        <span id="global-admin-toast-text">⚡ Instant State Live on GitHub in 2102ms! Committing standalone index.html...</span>
     </div>
 
     <div id="admin-live-toolbar" class="fixed bottom-4 left-3 z-[99990] bg-slate-950/95 text-white border-2 border-amber-400 rounded-2xl px-3.5 py-2.5 shadow-2xl flex flex-wrap items-center gap-1.5 max-w-[calc(100vw-96px)] backdrop-blur-md hidden">
@@ -4478,9 +4478,9 @@
                 <!-- Top Action & Mode Bar (Optimized for 20:9 Mobile & Desktop) -->
                 <div class="bg-slate-50 px-6 py-3.5 border-b border-slate-200 flex flex-wrap items-center justify-between gap-3">
                     <div id="admin-tabs-scroll-row" class="flex flex-wrap items-center gap-1.5">
-                        <button type="button" onclick="switchAdminTab('visual')" id="adm-tab-visual" class="adm-tab-btn px-3 py-2 rounded-xl bg-indigo-950 text-amber-400 font-bold text-xs transition">✨ Live Visual Editor</button>
+                        <button type="button" onclick="switchAdminTab('visual')" id="adm-tab-visual" class="adm-tab-btn px-3 py-2 rounded-xl bg-white hover:bg-amber-50 text-slate-700 border border-slate-200 font-bold text-xs transition">✨ Live Visual Editor</button>
                         <button type="button" onclick="switchAdminTab('pagesetup')" id="adm-tab-pagesetup" class="adm-tab-btn px-3 py-2 rounded-xl bg-white hover:bg-amber-50 text-slate-700 border border-slate-200 font-bold text-xs transition">📐 Page &amp; Aspect Ratio</button>
-                        <button type="button" onclick="switchAdminTab('publish')" id="adm-tab-publish" class="adm-tab-btn px-3 py-2 rounded-xl bg-white hover:bg-amber-50 text-slate-700 border border-slate-200 font-bold text-xs transition">🚀 Publish Live (GitHub Pages)</button>
+                        <button type="button" onclick="switchAdminTab('publish')" id="adm-tab-publish" class="adm-tab-btn px-3 py-2 rounded-xl bg-indigo-950 text-amber-400 font-bold text-xs transition">🚀 Publish Live (GitHub Pages)</button>
                         <button type="button" onclick="switchAdminTab('livecode')" id="adm-tab-livecode" class="adm-tab-btn px-3 py-2 rounded-xl bg-white hover:bg-amber-50 text-slate-700 border border-slate-200 font-bold text-xs transition">💻 Live Code Editor</button>
                         <button type="button" onclick="switchAdminTab('cloudflare')" id="adm-tab-cloudflare" class="adm-tab-btn px-3 py-2 rounded-xl bg-white hover:bg-amber-50 text-slate-700 border border-slate-200 font-bold text-xs transition">🐙 GitHub Pages Bundle</button>
                         <button type="button" onclick="switchAdminTab('migrator')" id="adm-tab-migrator" class="adm-tab-btn px-3 py-2 rounded-xl bg-white hover:bg-amber-50 text-slate-700 border border-slate-200 font-bold text-xs transition">🔄 Main-Site Migrator</button>
@@ -4493,7 +4493,7 @@
                     <div id="admin-actions-scroll-row" class="flex flex-wrap items-center gap-2">
                         <span id="live-publish-status-badge" class="px-2.5 py-1.5 rounded-xl bg-emerald-100 text-emerald-900 border border-emerald-300 text-[11px] font-extrabold flex items-center gap-1.5">
                             <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                            <span id="live-publish-status-text">Published Live (v40 • GitHub #5cdf244)</span>
+                            <span id="live-publish-status-text">Published Live (v41 • GitHub #e3a60ba)</span>
                         </span>
                         <button type="button" onclick="publishSiteChangesLive()" id="btn-top-publish-live" class="publish-live-btn-glow px-4 py-2 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-500 hover:from-emerald-500 hover:to-teal-400 text-white font-extrabold text-xs shadow-lg transition flex items-center gap-1.5">
                             <span>🚀 Update &amp; Publish to GitHub Pages</span>
@@ -4512,95 +4512,141 @@
 
                 <!-- Status Toast Banner -->
                 <div id="admin-status-toast" class="bg-emerald-50 border-b border-emerald-200 px-6 py-2.5 text-xs font-bold text-emerald-900 flex items-center justify-between">
-                    <span id="admin-status-toast-text">⚡ Instant State Live on GitHub in 1875ms! Committing standalone index.html...</span>
+                    <span id="admin-status-toast-text">⚡ Instant State Live on GitHub in 2102ms! Committing standalone index.html...</span>
                     <button type="button" onclick="this.parentElement.classList.add('hidden')" class="text-emerald-700 font-extrabold">✕</button>
                 </div>
 
                 <!-- Tab Body Container -->
                 <div class="p-6 overflow-y-auto flex-1 space-y-6" id="admin-tab-content">
-                    <div class="flex flex-wrap items-center justify-between gap-3 p-4 rounded-2xl bg-indigo-950 text-white">
-                        <div class="flex items-center gap-2">
-                            <span class="text-lg">✨</span>
-                            <div>
-                                <div class="font-display text-sm font-extrabold text-amber-400">Full-Fledged Website Builder, Crop Studio &amp; History</div>
-                                <div class="text-[11px] text-indigo-200">Add 14+ elements, format highlighted text, edit buttons &amp; links, crop uploaded images, and undo/redo any action.</div>
+                    <div class="space-y-6">
+                        <!-- Hero GitHub Pages Direct Publish Banner -->
+                        <div class="p-6 rounded-3xl bg-gradient-to-r from-indigo-950 via-slate-900 to-emerald-950 text-white shadow-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-2 border-emerald-400/50">
+                            <div class="space-y-1.5 max-w-2xl">
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <span class="px-3 py-0.5 rounded-full bg-emerald-400 text-slate-950 text-[10px] font-extrabold uppercase">Turbo GitHub Pages Publisher</span>
+                                    <span class="text-xs font-mono text-emerald-300">Version v40 • 10/31/2026, 12:25:17 PM</span>
+                                    <a href="https://github.com/anabacus21/anabacus/commit/9413882cff68c10d57aad504e20c5c5554b4c8ef" target="_blank" rel="noopener" class="px-2.5 py-0.5 rounded-full bg-white/10 hover:bg-white/20 text-amber-300 text-[11px] font-mono underline">Commit #9413882 (7842ms) ↗</a>
+                                </div>
+                                <h3 class="font-display text-xl sm:text-2xl font-extrabold text-white">🚀 Direct Update &amp; Publish to GitHub Pages</h3>
+                                <p class="text-xs text-indigo-100 leading-relaxed">
+                                    Click <strong>🚀 Update &amp; Publish to GitHub Pages Now</strong> to commit your visual text edits, drag-and-drop blocks, cropped images, branches, blogs, and full-screen layout directly to your GitHub repository using SHA-cached REST API acceleration!
+                                </p>
+                            </div>
+                            <div class="flex flex-col sm:flex-row md:flex-col gap-2 shrink-0 w-full md:w-auto">
+                                <button type="button" onclick="saveAndPublishToGitHubNow()" class="publish-live-btn-glow px-6 py-4 rounded-2xl bg-gradient-to-r from-emerald-400 to-teal-300 hover:from-emerald-300 hover:to-teal-200 text-slate-950 font-display font-extrabold text-sm shadow-2xl transition flex items-center justify-center gap-2">
+                                    <span>🚀 Update &amp; Publish to GitHub Pages Now</span>
+                                </button>
+                                <a href="https://anabacus21.github.io/anabacus/" target="_blank" rel="noopener" class="text-center py-1.5 px-3 rounded-xl bg-white/10 hover:bg-white/20 text-amber-300 font-mono text-[11px] font-bold">🌐 Open Live GitHub Pages Site (https://anabacus21.github.io/anabacus/) ↗</a>
                             </div>
                         </div>
-                        <div class="flex items-center gap-2">
-                            <button type="button" id="modal-undo-btn" onclick="adminUndo()" class="px-3.5 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white font-extrabold text-xs">↩️ Undo (2)</button>
-                            <button type="button" id="modal-redo-btn" onclick="adminRedo()" class="px-3.5 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white font-extrabold text-xs">↪️ Redo (0)</button>
-                        </div>
-                    </div>
 
-                    <div class="grid md:grid-cols-3 gap-5">
-                        <div class="p-5 rounded-3xl bg-gradient-to-br from-amber-50 to-white border-2 border-amber-300 space-y-3">
-                            <span class="px-3 py-1 rounded-full bg-amber-400 text-slate-950 text-[11px] font-extrabold uppercase">1. Full Visual Builder</span>
-                            <h3 class="font-display text-xl font-extrabold text-indigo-950">Add, Style, Text &amp; Button Editor</h3>
-                            <p class="text-xs text-slate-600 leading-relaxed">
-                                Launch the floating <strong>Add / Style Elements Studio</strong> with 14 blocks, Selected Text Formatting (Bold, Font, Size, Color, Highlight, Link), and a dedicated <strong>Button &amp; Link Editor</strong>.
-                            </p>
-                            <button type="button" onclick="toggleAdminLiveEdit(true, true, false)" class="w-full py-3 rounded-xl bg-indigo-950 hover:bg-indigo-900 text-amber-400 font-extrabold text-xs shadow transition">
-                                🧲 Launch Full Website Editor
-                            </button>
-                        </div>
+                        <div class="grid md:grid-cols-12 gap-5">
+                            <!-- Left Column (7 cols): GitHub Repository, Branch, File Path & Token Configuration -->
+                            <div class="md:col-span-7 p-5 rounded-3xl bg-slate-50 border border-slate-200 space-y-4">
+                                <div class="flex flex-wrap items-center justify-between gap-2">
+                                    <span class="px-3 py-1 rounded-full bg-indigo-950 text-amber-400 text-[10px] font-extrabold uppercase">🐙 GitHub REST API Direct Connection</span>
+                                    <span id="adm-gh-status-pill" class="text-[11px] font-extrabold text-emerald-700">● Verified: anabacus21/anabacus (main) in 1218ms</span>
+                                </div>
 
-                        <div class="p-5 rounded-3xl bg-gradient-to-br from-cyan-50 to-white border-2 border-cyan-300 space-y-3">
-                            <span class="px-3 py-1 rounded-full bg-cyan-500 text-slate-950 text-[11px] font-extrabold uppercase">2. Live Code Sync</span>
-                            <h3 class="font-display text-xl font-extrabold text-indigo-950">Split-Screen Live Code Dock</h3>
-                            <p class="text-xs text-slate-600 leading-relaxed">
-                                Open the floating <strong>Live Code Editor</strong> alongside the visual page. Every drag-and-drop, button edit, or text edit updates the HTML code live!
-                            </p>
-                            <button type="button" onclick="toggleAdminLiveEdit(true, true, true)" class="w-full py-3 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white font-extrabold text-xs shadow transition">
-                                💻 Launch Visual + Live Code Dock
-                            </button>
-                        </div>
+                                <div class="grid sm:grid-cols-12 gap-3">
+                                    <div class="sm:col-span-8">
+                                        <label class="block text-[11px] font-bold text-slate-700 mb-1">GitHub Repository (<code>owner/repo</code> or full GitHub URL)</label>
+                                        <div class="flex gap-1.5">
+                                            <input type="text" id="adm-gh-repo" value="anabacus21/anabacus" oninput="handleGitHubRepoInputOnChange(this.value)" placeholder="e.g. anabacus/anabacus.github.io" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs font-mono bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                                            <button type="button" onclick="autoDetectGitHubRepoToInputs()" title="Auto-detect from current *.github.io URL" class="px-3 py-2 rounded-xl bg-slate-200 hover:bg-amber-300 text-slate-900 font-extrabold text-[11px] shrink-0">🔍 Detect</button>
+                                        </div>
+                                    </div>
+                                    <div class="sm:col-span-4">
+                                        <label class="block text-[11px] font-bold text-slate-700 mb-1">Target Branch</label>
+                                        <input type="text" id="adm-gh-branch" value="main" placeholder="main" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 text-xs font-mono bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                                    </div>
+                                </div>
 
-                        <div class="p-5 rounded-3xl bg-gradient-to-br from-emerald-50 to-white border-2 border-emerald-400 space-y-3">
-                            <span class="px-3 py-1 rounded-full bg-emerald-600 text-white text-[11px] font-extrabold uppercase">3. Direct GitHub Pages Publish</span>
-                            <h3 class="font-display text-xl font-extrabold text-indigo-950">Update &amp; Commit to GitHub Pages</h3>
-                            <p class="text-xs text-slate-600 leading-relaxed">
-                                Push all visual edits, cropped photos, branches, blogs, and full-screen settings <strong>directly to GitHub Pages</strong> via the Turbo SHA-Cached REST API!
-                            </p>
-                            <div class="grid grid-cols-2 gap-2">
-                                <button type="button" onclick="publishSiteChangesLive()" class="w-full py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-xs shadow transition">
-                                    🚀 Publish to GitHub
-                                </button>
-                                <button type="button" onclick="switchAdminTab('publish')" class="w-full py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-extrabold text-xs shadow transition">
-                                    🐙 GitHub API Setup
-                                </button>
+                                <div class="grid sm:grid-cols-12 gap-3">
+                                    <div class="sm:col-span-5">
+                                        <label class="block text-[11px] font-bold text-slate-700 mb-1">Target HTML File Path</label>
+                                        <input type="text" id="adm-gh-path" value="index.html" placeholder="index.html" class="w-full px-3 py-2 rounded-xl border border-slate-300 text-xs font-mono bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                                    </div>
+                                    <div class="sm:col-span-7">
+                                        <label class="block text-[11px] font-bold text-slate-700 mb-1">Publish Speed &amp; Commit Mode</label>
+                                        <select id="adm-gh-mode" onchange="ADMIN_CONFIG.githubPublishMode = this.value; persistGitHubConfigToStorage()" class="w-full px-3 py-2 rounded-xl border border-slate-300 text-xs font-bold bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                                            <option value="turbo-dual" selected="">⚡ Turbo Dual (Instant ~250ms State JSON + Full index.html Commit)</option>
+                                            <option value="fast-state">⚡ Ultra-Fast Delta State Only (~250ms anabacus-live-state.json)</option>
+                                            <option value="full-html">📄 Full Standalone index.html Commit Only</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="flex items-center justify-between mb-1">
+                                        <label class="block text-[11px] font-bold text-slate-700">GitHub Personal Access Token (PAT — Stored Locally, Never Exposed in HTML)</label>
+                                        <a href="https://github.com/settings/tokens/new?scopes=repo,workflow&amp;description=ANABACUS+Admin+Portal+Publisher" target="_blank" rel="noopener" class="text-[11px] font-extrabold text-indigo-700 hover:underline">🔑 Generate Token on GitHub ↗</a>
+                                    </div>
+                                    <div class="flex gap-1.5">
+                                        <input type="password" id="adm-gh-token" value="" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx or github_pat_..." autocomplete="off" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs font-mono bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                                        <button type="button" onclick="toggleGhTokenVisibility()" id="btn-toggle-gh-token" class="px-3 py-2 rounded-xl bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold text-xs shrink-0">👁️ Show</button>
+                                    </div>
+                                    <p class="text-[10px] text-slate-500 mt-1">
+                                        🔒 Security Guard: Your token is saved strictly in your browser's private storage and is <strong>automatically scrubbed</strong> from <code>index.html</code> before committing so GitHub Secret Scanning never revokes it.
+                                    </p>
+                                </div>
+
+                                <label class="flex items-center justify-between gap-2 text-xs font-bold text-slate-700 cursor-pointer bg-white p-3 rounded-xl border border-slate-200">
+                                    <span>⚡ Auto-Publish to GitHub Pages Whenever I Click Save in Admin</span>
+                                    <input type="checkbox" id="adm-publish-auto-chk" onchange="ADMIN_CONFIG.autoPublishOnSave = this.checked; persistGitHubConfigToStorage()" class="w-4 h-4 accent-emerald-600">
+                                </label>
+
+                                <div class="flex flex-wrap gap-2 pt-1">
+                                    <button type="button" onclick="testGitHubConnectionFast(true)" id="btn-test-gh-conn" class="px-4 py-2.5 rounded-xl bg-indigo-950 hover:bg-indigo-900 text-amber-400 font-extrabold text-xs shadow transition">
+                                        ⚡ Test &amp; Verify GitHub Connection (Pre-Warm SHA)
+                                    </button>
+                                    <button type="button" onclick="saveAndPublishToGitHubNow()" class="px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-xs shadow transition">
+                                        🚀 Save &amp; Publish Now
+                                    </button>
+                                    <button type="button" onclick="pullLatestLiveStateFromGitHub(true)" class="px-3.5 py-2.5 rounded-xl bg-white hover:bg-slate-100 text-slate-700 border border-slate-300 font-bold text-xs transition">
+                                        ↻ Pull Latest from GitHub
+                                    </button>
+                                    <button type="button" onclick="clearLocalPublishedCache()" class="px-3 py-2.5 rounded-xl bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 font-bold text-xs transition">
+                                        🗑️ Reset Local Cache
+                                    </button>
+                                </div>
                             </div>
-                            <button type="button" onclick="exportFullUpdatedHTML('index.html')" class="w-full py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-amber-300 font-extrabold text-xs shadow transition">
-                                💾 Download Standalone index.html
-                            </button>
-                        </div>
-                    </div>
 
-                    <!-- Quick Add Elements Bar Directly Inside Portal -->
-                    <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
-                        <div class="flex items-center justify-between">
-                            <h4 class="font-display text-sm font-bold text-indigo-950">➕ Quick Insert Element Into Active Page:</h4>
-                            <button type="button" onclick="deleteSelectedBlock()" class="px-3 py-1.5 rounded-xl bg-rose-100 hover:bg-rose-200 text-rose-700 font-bold text-xs">🗑️ Delete Currently Selected Element</button>
-                        </div>
-                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
-                            <button type="button" onclick="insertGraphicComponent('card')" class="p-2.5 rounded-xl bg-white hover:bg-amber-50 border border-slate-200 text-xs font-bold text-slate-800">🖼️ + Photo &amp; Text Card</button>
-                            <button type="button" onclick="insertGraphicComponent('comrade')" class="p-2.5 rounded-xl bg-white hover:bg-amber-50 border border-slate-200 text-xs font-bold text-slate-800">👤 + Comrade Card</button>
-                            <button type="button" onclick="insertGraphicComponent('imagebox')" class="p-2.5 rounded-xl bg-white hover:bg-amber-50 border border-slate-200 text-xs font-bold text-slate-800">📷 + Blank Image Box</button>
-                            <button type="button" onclick="insertGraphicComponent('heading')" class="p-2.5 rounded-xl bg-white hover:bg-amber-50 border border-slate-200 text-xs font-bold text-slate-800">📝 + Heading &amp; Text</button>
-                            <button type="button" onclick="insertGraphicComponent('twocol')" class="p-2.5 rounded-xl bg-white hover:bg-amber-50 border border-slate-200 text-xs font-bold text-slate-800">📊 + 2-Column Block</button>
-                            <button type="button" onclick="insertGraphicComponent('threecol')" class="p-2.5 rounded-xl bg-white hover:bg-amber-50 border border-slate-200 text-xs font-bold text-slate-800">🏛️ + 3-Column Features</button>
-                            <button type="button" onclick="insertGraphicComponent('testimonial')" class="p-2.5 rounded-xl bg-white hover:bg-amber-50 border border-slate-200 text-xs font-bold text-slate-800">💬 + Testimonial</button>
-                            <button type="button" onclick="insertGraphicComponent('stats')" class="p-2.5 rounded-xl bg-white hover:bg-amber-50 border border-slate-200 text-xs font-bold text-slate-800">🔢 + Stats Row</button>
-                            <button type="button" onclick="insertGraphicComponent('faq')" class="p-2.5 rounded-xl bg-white hover:bg-amber-50 border border-slate-200 text-xs font-bold text-slate-800">❓ + FAQ Item</button>
-                            <button type="button" onclick="insertGraphicComponent('coursecard')" class="p-2.5 rounded-xl bg-white hover:bg-amber-50 border border-slate-200 text-xs font-bold text-slate-800">🎓 + Course Card</button>
-                            <button type="button" onclick="insertGraphicComponent('banner')" class="p-2.5 rounded-xl bg-white hover:bg-amber-50 border border-slate-200 text-xs font-bold text-slate-800">✨ + CTA Banner</button>
-                            <button type="button" onclick="insertGraphicComponent('button')" class="p-2.5 rounded-xl bg-white hover:bg-amber-50 border border-slate-200 text-xs font-bold text-slate-800">🔘 + Action Button</button>
-                        </div>
-                    </div>
+                            <!-- Right Column (5 cols): Live Speed Diagnostics & 1-Click GitHub Pages Setup -->
+                            <div class="md:col-span-5 p-5 rounded-3xl bg-amber-50/70 border border-amber-200 space-y-4 flex flex-col justify-between">
+                                <div class="space-y-3">
+                                    <span class="px-3 py-1 rounded-full bg-amber-400 text-slate-950 text-[10px] font-extrabold uppercase">⚡ Speed Diagnostics &amp; GitHub Pages Automation</span>
+                                    <h4 class="font-display text-base font-extrabold text-indigo-950">How Turbo GitHub Publishing Works</h4>
 
-                    <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
-                        <h4 class="font-display text-sm font-bold text-indigo-950">Quick Jump to Any Page in Visual Edit Mode:</h4>
-                        <div class="flex flex-wrap gap-2">
-                            <button type="button" onclick="switchPage('home'); toggleAdminLiveEdit(true, true, false)" class="px-3.5 py-2 rounded-xl bg-white hover:bg-amber-100 border border-slate-200 text-xs font-bold text-slate-800 transition">✏️ Edit #home</button><button type="button" onclick="switchPage('virtual-abacus-test'); toggleAdminLiveEdit(true, true, false)" class="px-3.5 py-2 rounded-xl bg-white hover:bg-amber-100 border border-slate-200 text-xs font-bold text-slate-800 transition">✏️ Edit #virtual-abacus-test</button><button type="button" onclick="switchPage('gallery'); toggleAdminLiveEdit(true, true, false)" class="px-3.5 py-2 rounded-xl bg-white hover:bg-amber-100 border border-slate-200 text-xs font-bold text-slate-800 transition">✏️ Edit #gallery</button><button type="button" onclick="switchPage('comrades'); toggleAdminLiveEdit(true, true, false)" class="px-3.5 py-2 rounded-xl bg-white hover:bg-amber-100 border border-slate-200 text-xs font-bold text-slate-800 transition">✏️ Edit #comrades</button><button type="button" onclick="switchPage('academics'); toggleAdminLiveEdit(true, true, false)" class="px-3.5 py-2 rounded-xl bg-white hover:bg-amber-100 border border-slate-200 text-xs font-bold text-slate-800 transition">✏️ Edit #academics</button><button type="button" onclick="switchPage('branches'); toggleAdminLiveEdit(true, true, false)" class="px-3.5 py-2 rounded-xl bg-white hover:bg-amber-100 border border-slate-200 text-xs font-bold text-slate-800 transition">✏️ Edit #branches</button><button type="button" onclick="switchPage('nitesh'); toggleAdminLiveEdit(true, true, false)" class="px-3.5 py-2 rounded-xl bg-white hover:bg-amber-100 border border-slate-200 text-xs font-bold text-slate-800 transition">✏️ Edit #nitesh</button><button type="button" onclick="switchPage('news'); toggleAdminLiveEdit(true, true, false)" class="px-3.5 py-2 rounded-xl bg-white hover:bg-amber-100 border border-slate-200 text-xs font-bold text-slate-800 transition">✏️ Edit #news</button><button type="button" onclick="switchPage('blogs'); toggleAdminLiveEdit(true, true, false)" class="px-3.5 py-2 rounded-xl bg-white hover:bg-amber-100 border border-slate-200 text-xs font-bold text-slate-800 transition">✏️ Edit #blogs</button><button type="button" onclick="switchPage('contact'); toggleAdminLiveEdit(true, true, false)" class="px-3.5 py-2 rounded-xl bg-white hover:bg-amber-100 border border-slate-200 text-xs font-bold text-slate-800 transition">✏️ Edit #contact</button>
+                                    <div id="adm-gh-diag-box" class="p-3.5 rounded-2xl bg-slate-950 text-slate-100 font-mono text-[11px] space-y-1.5 border border-slate-800 shadow-inner">
+                    <div class="text-emerald-400 font-bold">✅ GitHub API Verified in 1218 ms!</div>
+                    <div>Repository: <span class="text-white font-bold">anabacus21/anabacus</span> (Public)</div>
+                    <div>Write Access: <span class="text-emerald-400">✓ Push &amp; Commit Permitted</span></div>
+                    <div>Branch &amp; SHA Cache: <span class="text-cyan-300">main • index.html SHA Pre-Cached (d2e9981)</span></div>
+                    <div>Live GitHub Pages URL: <a href="https://anabacus21.github.io/anabacus/" target="_blank" rel="noopener" class="text-amber-300 underline">https://anabacus21.github.io/anabacus/ ↗</a></div>
+                </div>
+
+                                    <ol class="text-xs text-slate-700 space-y-1.5 list-decimal list-inside leading-relaxed">
+                                        <li>Click <strong>🔑 Generate Token on GitHub</strong> (select <code>repo</code> scope on Classic token, or <code>Contents: Read &amp; Write</code> on Fine-Grained token).</li>
+                                        <li>Enter your repository (e.g. <code>username/username.github.io</code>) and token on the left, then click <strong>⚡ Test &amp; Verify GitHub Connection</strong>.</li>
+                                        <li>Click <strong>🚀 Update &amp; Publish to GitHub Pages Now</strong> anytime — our engine pushes <code>anabacus-live-state.json</code> in ~250ms for instant updates AND commits the full standalone <code>index.html</code>!</li>
+                                    </ol>
+                                </div>
+
+                                <div class="space-y-2 pt-2 border-t border-amber-200/80">
+                                    <div class="grid grid-cols-2 gap-2">
+                                        <button type="button" onclick="enableGitHubPagesViaApi()" class="py-2.5 px-3 rounded-xl bg-indigo-950 hover:bg-indigo-900 text-amber-400 font-extrabold text-[11px] shadow transition">
+                                            🌐 Auto-Enable GitHub Pages
+                                        </button>
+                                        <button type="button" onclick="pushGitHubPagesHelperFiles()" class="py-2.5 px-3 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold text-[11px] shadow transition">
+                                            ⚡ Push .nojekyll &amp; 404.html
+                                        </button>
+                                    </div>
+                                    <div class="p-2.5 rounded-xl bg-white border border-amber-200 text-[10.5px] text-slate-600">
+                                        💡 <strong>Why .nojekyll?</strong> Pushing <code>.nojekyll</code> tells GitHub Pages to skip Jekyll build steps and deploy your updated HTML &amp; state JSON at maximum CDN speed!
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -6206,9 +6252,9 @@
     "githubFilePath": "index.html",
     "githubCustomDomain": "www.anabacus.com",
     "githubPublishMode": "turbo-dual",
-    "githubLastCommitSha": "5cdf2445da44429518c2d12e9b04cc26862ee13a",
-    "githubLastCommitUrl": "https://github.com/anabacus21/anabacus/commit/5cdf2445da44429518c2d12e9b04cc26862ee13a",
-    "githubLastPublishMs": 1875,
+    "githubLastCommitSha": "e3a60ba3a78d82559e6f69864aab802bb96d2886",
+    "githubLastCommitUrl": "https://github.com/anabacus21/anabacus/commit/e3a60ba3a78d82559e6f69864aab802bb96d2886",
+    "githubLastPublishMs": 2102,
     "siteTitle": "ANABACUS | ANA KNOWLEDGE ARENA PVT. LTD. (AKAPL) - Learn Abacus While Playing",
     "metaDescription": "AKAPL welcomes you in the glorious abacus industry. Learn Abacus While Playing at ANABACUS (ANA KNOWLEDGE ARENA PVT. LTD.), founded by Dr. Ananya Das Mahapatra.",
     "announcementEnabled": false,
@@ -6218,8 +6264,8 @@
     "accentColor": "#f59e0b",
     "liveCloudEndpointUrl": "https://script.google.com/macros/s/AKfycbyRh0dhgQRKXPjo-bAIm4zJG1SZgsoKMGwmjTpEewSf75l2IG2UDHseM7-9z8Bz_ky6/exec",
     "autoPublishOnSave": false,
-    "publishedVersion": 40,
-    "lastPublishedAt": "2026-10-31T06:55:17.085Z",
+    "publishedVersion": 41,
+    "lastPublishedAt": "2026-10-31T06:58:57.117Z",
     "pageSettings": {
         "aspectMode": "auto",
         "maxWidth": "100%",
