@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth" data-aspect-mode="fullscreen" data-page-density="compact" data-card-style="default" data-abacus-layout="auto-fit" data-fullscreen-fit="true"><head>
+<html lang="en" class="scroll-smooth" data-aspect-mode="fullscreen" data-page-density="compact" data-card-style="default" data-abacus-layout="auto-fit" data-fullscreen-fit="true" data-native-fullscreen="false"><head>
     <script>
         (function() {
             window.__anabacusEnsureHeroIds = function() {
@@ -2658,7 +2658,7 @@
                     <!-- 4-Step Journey -->
                     <div class="space-y-8">
                         <div class="text-center max-w-2xl mx-auto">
-                            <span class="px-3.5 py-1 rounded-full bg-indigo-100 text-indigo-900 text-xs font-bold uppercase tracking-widest">Simple Enrollment Process</span>
+                            
                             <h2 class="font-display text-3xl font-extrabold text-indigo-950 mt-2">How Learning Works at ANABACUS</h2>
                         </div>
 
@@ -2759,7 +2759,7 @@
                     <!-- Persistent Device Score Display -->
                     <div class="bg-slate-900 border border-slate-700/90 rounded-xl px-3.5 py-1 text-right shadow-inner min-w-[85px]">
                         <span class="text-[9px] uppercase tracking-wider text-slate-400 block font-bold leading-none">Score</span>
-                        <span id="headerScoreDisplay" class="font-['JetBrains_Mono'] text-base font-black text-emerald-400 leading-tight">1 / 1</span>
+                        <span id="headerScoreDisplay" class="font-['JetBrains_Mono'] text-base font-black text-emerald-400 leading-tight">0 / 0</span>
                     </div>
                 </div>
             </div>
@@ -4070,7 +4070,7 @@
             <option value="blogs">📄 Page: Blogs</option>
             <option value="contact">📄 Page: Contact</option>
         </select>
-        <button type="button" onmousedown="event.preventDefault()" onclick="adminUndo()" id="btn-admin-undo" title="Undo (Ctrl+Z)" class="px-2.5 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs transition border border-slate-700" style="opacity: 1;">↩️ Undo (2)</button>
+        <button type="button" onmousedown="event.preventDefault()" onclick="adminUndo()" id="btn-admin-undo" title="Undo (Ctrl+Z)" class="px-2.5 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs transition border border-slate-700" style="opacity: 0.45;">↩️ Undo (0)</button>
         <button type="button" onmousedown="event.preventDefault()" onclick="adminRedo()" id="btn-admin-redo" title="Redo (Ctrl+Y)" class="px-2.5 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs transition border border-slate-700" style="opacity: 0.45;">↪️ Redo (0)</button>
         <button type="button" onclick="toggleGraphicPalette()" class="px-3 py-1.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-extrabold text-xs transition shadow">
             ➕ Add / Style Elements
@@ -4114,7 +4114,7 @@
                 <span class="text-xs font-extrabold uppercase tracking-wider text-amber-400">Add / Style Elements Studio</span>
             </div>
             <div class="flex items-center gap-1">
-                <button type="button" onmousedown="event.preventDefault()" onclick="adminUndo()" id="palette-undo-btn" title="Undo (2)" class="px-2 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-[11px] font-bold">↩️</button>
+                <button type="button" onmousedown="event.preventDefault()" onclick="adminUndo()" id="palette-undo-btn" title="Undo (0)" class="px-2 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-[11px] font-bold">↩️</button>
                 <button type="button" onmousedown="event.preventDefault()" onclick="adminRedo()" id="palette-redo-btn" title="Redo (0)" class="px-2 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-[11px] font-bold">↪️</button>
                 <button type="button" onclick="toggleGraphicPalette()" class="text-slate-400 hover:text-white font-bold text-xs px-1.5">✕</button>
             </div>
@@ -4560,11 +4560,11 @@
             <div class="space-y-2">
                 <label class="block text-xs font-extrabold uppercase tracking-wider text-indigo-950">1. Aspect Ratio &amp; Screen Fit Mode</label>
                 <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs font-bold">
-                    <button type="button" onclick="applyAspectAndPageSetting('aspectMode', 'auto')" data-asp-btn="auto" class="p-2.5 rounded-xl border-2 border-amber-400 bg-amber-50 text-indigo-950 text-center transition font-bold">
+                    <button type="button" onclick="applyAspectAndPageSetting('aspectMode', 'auto')" data-asp-btn="auto" class="p-2.5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-amber-50 text-slate-800 text-center transition font-bold">
                         <div>✨ Auto Dynamic</div>
                         <div class="text-[10px] text-slate-500 font-normal">Fits Any Device</div>
                     </button>
-                    <button type="button" onclick="applyAspectAndPageSetting('aspectMode', 'fullscreen')" data-asp-btn="fullscreen" class="p-2.5 rounded-xl border border-slate-200 bg-slate-50 hover:bg-amber-50 text-slate-800 text-center transition font-bold">
+                    <button type="button" onclick="applyAspectAndPageSetting('aspectMode', 'fullscreen')" data-asp-btn="fullscreen" class="p-2.5 rounded-xl border-2 border-amber-400 bg-amber-50 text-indigo-950 text-center transition font-bold">
                         <div>🖥️ Full Screen</div>
                         <div class="text-[10px] text-slate-500 font-normal">100% Edge-to-Edge</div>
                     </button>
@@ -4622,14 +4622,14 @@
                 <div>
                     <div class="flex justify-between text-xs font-bold text-slate-700 mb-1">
                         <span>Text &amp; UI Scale</span>
-                        <span id="qps-lbl-font" class="text-indigo-900">100%</span>
+                        <span id="qps-lbl-font" class="text-indigo-900">105%</span>
                     </div>
                     <input type="range" id="qps-font-scale" min="85" max="120" step="5" value="100" oninput="applyAspectAndPageSetting('fontScale', this.value)" class="w-full accent-amber-500">
                 </div>
                 <div>
                     <div class="flex justify-between text-xs font-bold text-slate-700 mb-1">
                         <span>Honeycomb Showcase Size</span>
-                        <span id="qps-lbl-hc" class="text-indigo-900">110%</span>
+                        <span id="qps-lbl-hc" class="text-indigo-900">120%</span>
                     </div>
                     <input type="range" id="qps-hc-scale" min="75" max="150" step="5" value="110" oninput="applyAspectAndPageSetting('honeycombScale', this.value)" class="w-full accent-indigo-600">
                 </div>
@@ -4735,7 +4735,7 @@
                     <div id="admin-actions-scroll-row" class="flex flex-wrap items-center gap-2">
                         <span id="live-publish-status-badge" class="px-2.5 py-1.5 rounded-xl bg-emerald-100 text-emerald-900 border border-emerald-300 text-[11px] font-extrabold flex items-center gap-1.5">
                             <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                            <span id="live-publish-status-text">Published Live (v41 • GitHub #e3a60ba)</span>
+                            <span id="live-publish-status-text">Published Live (v47 • GitHub #1a984ad)</span>
                         </span>
                         <button type="button" onclick="publishSiteChangesLive()" id="btn-top-publish-live" class="publish-live-btn-glow px-4 py-2 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-500 hover:from-emerald-500 hover:to-teal-400 text-white font-extrabold text-xs shadow-lg transition flex items-center gap-1.5">
                             <span>🚀 Update &amp; Publish to GitHub Pages</span>
@@ -4766,8 +4766,8 @@
                             <div class="space-y-1.5 max-w-2xl">
                                 <div class="flex flex-wrap items-center gap-2">
                                     <span class="px-3 py-0.5 rounded-full bg-emerald-400 text-slate-950 text-[10px] font-extrabold uppercase">Turbo GitHub Pages Publisher</span>
-                                    <span class="text-xs font-mono text-emerald-300">Version v40 • 10/31/2026, 12:25:17 PM</span>
-                                    <a href="https://github.com/anabacus21/anabacus/commit/9413882cff68c10d57aad504e20c5c5554b4c8ef" target="_blank" rel="noopener" class="px-2.5 py-0.5 rounded-full bg-white/10 hover:bg-white/20 text-amber-300 text-[11px] font-mono underline">Commit #9413882 (7842ms) ↗</a>
+                                    <span class="text-xs font-mono text-emerald-300">Version v46 • 10/31/2026, 1:21:26 PM</span>
+                                    <a href="https://github.com/anabacus21/anabacus/commit/4b9332eca29a3d5eb5641f7d471db1b2a1e7706e" target="_blank" rel="noopener" class="px-2.5 py-0.5 rounded-full bg-white/10 hover:bg-white/20 text-amber-300 text-[11px] font-mono underline">Commit #4b9332e (32067ms) ↗</a>
                                 </div>
                                 <h3 class="font-display text-xl sm:text-2xl font-extrabold text-white">🚀 Direct Update &amp; Publish to GitHub Pages</h3>
                                 <p class="text-xs text-indigo-100 leading-relaxed">
@@ -4787,7 +4787,7 @@
                             <div class="md:col-span-7 p-5 rounded-3xl bg-slate-50 border border-slate-200 space-y-4">
                                 <div class="flex flex-wrap items-center justify-between gap-2">
                                     <span class="px-3 py-1 rounded-full bg-indigo-950 text-amber-400 text-[10px] font-extrabold uppercase">🐙 GitHub REST API Direct Connection</span>
-                                    <span id="adm-gh-status-pill" class="text-[11px] font-extrabold text-emerald-700">● Verified: anabacus21/anabacus (main) in 1218ms</span>
+                                    <span id="adm-gh-status-pill" class="text-[11px] font-extrabold text-emerald-700">● Verified: anabacus21/anabacus (main) in 1302ms</span>
                                 </div>
 
                                 <div class="grid sm:grid-cols-12 gap-3">
@@ -4861,10 +4861,10 @@
                                     <h4 class="font-display text-base font-extrabold text-indigo-950">How Turbo GitHub Publishing Works</h4>
 
                                     <div id="adm-gh-diag-box" class="p-3.5 rounded-2xl bg-slate-950 text-slate-100 font-mono text-[11px] space-y-1.5 border border-slate-800 shadow-inner">
-                    <div class="text-emerald-400 font-bold">✅ GitHub API Verified in 1218 ms!</div>
+                    <div class="text-emerald-400 font-bold">✅ GitHub API Verified in 1302 ms!</div>
                     <div>Repository: <span class="text-white font-bold">anabacus21/anabacus</span> (Public)</div>
                     <div>Write Access: <span class="text-emerald-400">✓ Push &amp; Commit Permitted</span></div>
-                    <div>Branch &amp; SHA Cache: <span class="text-cyan-300">main • index.html SHA Pre-Cached (d2e9981)</span></div>
+                    <div>Branch &amp; SHA Cache: <span class="text-cyan-300">main • index.html SHA Pre-Cached (20b4d34)</span></div>
                     <div>Live GitHub Pages URL: <a href="https://anabacus21.github.io/anabacus/" target="_blank" rel="noopener" class="text-amber-300 underline">https://anabacus21.github.io/anabacus/ ↗</a></div>
                 </div>
 
@@ -6494,9 +6494,9 @@
     "githubFilePath": "index.html",
     "githubCustomDomain": "www.anabacus.com",
     "githubPublishMode": "turbo-dual",
-    "githubLastCommitSha": "e3a60ba3a78d82559e6f69864aab802bb96d2886",
-    "githubLastCommitUrl": "https://github.com/anabacus21/anabacus/commit/e3a60ba3a78d82559e6f69864aab802bb96d2886",
-    "githubLastPublishMs": 2102,
+    "githubLastCommitSha": "1a984ad01bd6b710d7f10b59b7ab4ba8f1475305",
+    "githubLastCommitUrl": "https://github.com/anabacus21/anabacus/commit/1a984ad01bd6b710d7f10b59b7ab4ba8f1475305",
+    "githubLastPublishMs": 1634,
     "siteTitle": "ANABACUS | ANA KNOWLEDGE ARENA PVT. LTD. (AKAPL) - Learn Abacus While Playing",
     "metaDescription": "AKAPL welcomes you in the glorious abacus industry. Learn Abacus While Playing at ANABACUS (ANA KNOWLEDGE ARENA PVT. LTD.), founded by Dr. Ananya Das Mahapatra.",
     "announcementEnabled": false,
@@ -6505,15 +6505,15 @@
     "enableAnimations": true,
     "accentColor": "#f59e0b",
     "liveCloudEndpointUrl": "https://script.google.com/macros/s/AKfycbyRh0dhgQRKXPjo-bAIm4zJG1SZgsoKMGwmjTpEewSf75l2IG2UDHseM7-9z8Bz_ky6/exec",
-    "autoPublishOnSave": false,
-    "publishedVersion": 42,
-    "lastPublishedAt": "2026-10-31T08:00:00.000Z",
+    "autoPublishOnSave": true,
+    "publishedVersion": 47,
+    "lastPublishedAt": "2026-10-31T08:36:31.674Z",
     "pageSettings": {
         "aspectMode": "fullscreen",
         "maxWidth": "100%",
         "density": "compact",
-        "fontScale": 100,
-        "honeycombScale": 100,
+        "fontScale": 105,
+        "honeycombScale": 120,
         "cardStyle": "default",
         "abacusLayout": "auto-fit",
         "fullScreenFit": true,
