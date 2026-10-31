@@ -2833,12 +2833,12 @@
                     <!-- Top Row: Question # and Timer -->
                     <div class="flex items-center justify-between text-[11px] font-bold uppercase tracking-wider text-slate-400 border-b border-slate-700/60 pb-1.5 mb-2">
                         <div class="flex items-center space-x-1.5">
-                            <span>Q#<span id="qIndex">2</span></span>
+                            <span>Q#<span id="qIndex">1</span></span>
                             <span class="text-slate-600">•</span>
                             <span id="qOperationType" class="text-amber-400">Level 1 (1D +/-)</span>
                         </div>
                         <div class="font-['JetBrains_Mono'] text-slate-300 bg-slate-900 px-2 py-0.5 rounded border border-slate-700">
-                            ⏱️ <span id="questionTimerDisplay">5.6s</span>
+                            ⏱️ <span id="questionTimerDisplay">4.4s</span>
                         </div>
                     </div>
 
@@ -2860,7 +2860,7 @@
                     </div>
 
                     <!-- DICTATION VOICE CONTROL BAR -->
-                    <div id="dictationControlsBar" class="mb-2 bg-slate-900/95 border border-sky-500/40 rounded-xl p-2.5 space-y-2 text-xs">
+                    <div id="dictationControlsBar" class="mb-2 bg-slate-900/95 border border-sky-500/40 rounded-xl p-2.5 space-y-2 text-xs hidden">
                         <div class="flex items-center justify-between gap-2">
                             <div class="flex items-center gap-1.5">
                                 <span class="text-sky-400 font-bold text-[11px]">🗣️ Voice Speed:</span>
@@ -2892,7 +2892,7 @@
                     <!-- Main Problem Expression Display -->
                     <div class="min-h-[52px] flex flex-col items-center justify-center my-1 px-1">
                         <div class="text-xl sm:text-2xl font-black text-white tracking-wide font-['JetBrains_Mono'] flex flex-wrap items-center justify-center gap-1.5 leading-snug">
-                            <span id="questionExpression">🎤 Ready for Answer</span>
+                            <span id="questionExpression">2 + 2</span>
                             <span id="equalsSymbol" class="text-amber-400">=</span>
                             <span id="questionAnswerPlaceholder" class="text-amber-400 bg-slate-900 px-3 py-0.5 rounded-lg border border-slate-700 text-xl sm:text-2xl font-bold">?</span>
                         </div>
@@ -3212,7 +3212,7 @@
                         <!-- 9. Dr. Milton Jana (Exact Main-Site Image: LOGO_png_non_transparent.png) -->
                         <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm card-hover flex flex-col justify-between space-y-4" data-dnd-item="true">
                             <div class="flex items-start gap-4">
-                                <img id="comrade-img-8" data-wix-alt="LOGO_png_non_transparent.png" src="data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' width='600' height='450' viewBox='0 0 600 450'&gt;&lt;rect width='600' height='450' fill='%23f1f5f9'/&gt;&lt;rect x='24' y='24' width='552' height='402' rx='24' fill='%23ffffff' stroke='%2394a3b8' stroke-width='3' stroke-dasharray='12 10'/&gt;&lt;g transform='translate(300, 195)' fill='none' stroke='%2364748b' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'&gt;&lt;rect x='-36' y='-28' width='72' height='56' rx='10' fill='%23f8fafc'/&gt;&lt;circle cx='-12' cy='-8' r='7' fill='%23cbd5e1' stroke='none'/&gt;&lt;path d='M-36 16 L-12 -6 L8 12 L20 0 L36 16'/&gt;&lt;/g&gt;&lt;text x='300' y='258' text-anchor='middle' font-family='Inter, sans-serif' font-size='16' font-weight='700' fill='%23334155'&gt;Blank Image Space&lt;/text&gt;&lt;text x='300' y='282' text-anchor='middle' font-family='Inter, sans-serif' font-size='12' font-weight='600' fill='%2364748b'&gt;Click to Upload Your Photo&lt;/text&gt;&lt;/svg&gt;" alt="LOGO_png_non_transparent.png" class="w-20 h-20 rounded-2xl object-contain p-1 border-2 border-amber-400 shadow-sm shrink-0 bg-indigo-950 cursor-pointer" onclick="openLightbox(this.src, 'Dr. Milton Jana — KPS School, Heria')" onerror="this.onerror=null;this.src=window.BLANK_IMG_URI">
+                                <img id="comrade-img-8" data-wix-alt="LOGO_png_non_transparent.png" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='450' viewBox='0 0 600 450'><rect width='600' height='450' fill='%23f1f5f9'/><rect x='24' y='24' width='552' height='402' rx='24' fill='%23ffffff' stroke='%2394a3b8' stroke-width='3' stroke-dasharray='12 10'/><g transform='translate(300, 195)' fill='none' stroke='%2364748b' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><rect x='-36' y='-28' width='72' height='56' rx='10' fill='%23f8fafc'/><circle cx='-12' cy='-8' r='7' fill='%23cbd5e1' stroke='none'/><path d='M-36 16 L-12 -6 L8 12 L20 0 L36 16'/></g><text x='300' y='258' text-anchor='middle' font-family='Inter, sans-serif' font-size='16' font-weight='700' fill='%23334155'>Blank Image Space</text><text x='300' y='282' text-anchor='middle' font-family='Inter, sans-serif' font-size='12' font-weight='600' fill='%2364748b'>Click to Upload Your Photo</text></svg>" alt="LOGO_png_non_transparent.png" class="w-20 h-20 rounded-2xl object-contain p-1 border-2 border-amber-400 shadow-sm shrink-0 bg-indigo-950 cursor-pointer" onclick="openLightbox(this.src, 'Dr. Milton Jana — KPS School, Heria')" onerror="this.onerror=null;this.src=window.BLANK_IMG_URI">
                                 <div>
                                     <span class="px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-900 text-[10px] font-bold uppercase">Franchise Owner • Teacher</span>
                                     <h3 class="font-display text-lg font-bold text-indigo-950 mt-1">Dr. Milton Jana</h3>
@@ -3225,7 +3225,7 @@
                         <!-- 10. Mr. Swaroop Bar (Exact Main-Site Image: LOGO_png_non_transparent.png) -->
                         <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm card-hover flex flex-col justify-between space-y-4" data-dnd-item="true">
                             <div class="flex items-start gap-4">
-                                <img id="comrade-img-9" data-wix-alt="LOGO_png_non_transparent.png" src="data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' width='600' height='450' viewBox='0 0 600 450'&gt;&lt;rect width='600' height='450' fill='%23f1f5f9'/&gt;&lt;rect x='24' y='24' width='552' height='402' rx='24' fill='%23ffffff' stroke='%2394a3b8' stroke-width='3' stroke-dasharray='12 10'/&gt;&lt;g transform='translate(300, 195)' fill='none' stroke='%2364748b' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'&gt;&lt;rect x='-36' y='-28' width='72' height='56' rx='10' fill='%23f8fafc'/&gt;&lt;circle cx='-12' cy='-8' r='7' fill='%23cbd5e1' stroke='none'/&gt;&lt;path d='M-36 16 L-12 -6 L8 12 L20 0 L36 16'/&gt;&lt;/g&gt;&lt;text x='300' y='258' text-anchor='middle' font-family='Inter, sans-serif' font-size='16' font-weight='700' fill='%23334155'&gt;Blank Image Space&lt;/text&gt;&lt;text x='300' y='282' text-anchor='middle' font-family='Inter, sans-serif' font-size='12' font-weight='600' fill='%2364748b'&gt;Click to Upload Your Photo&lt;/text&gt;&lt;/svg&gt;" alt="LOGO_png_non_transparent.png" class="w-20 h-20 rounded-2xl object-contain p-1 border-2 border-sky-400 shadow-sm shrink-0 bg-indigo-950 cursor-pointer" onclick="openLightbox(this.src, 'Mr. Swaroop Bar — Ghatal Branch')" onerror="this.onerror=null;this.src=window.BLANK_IMG_URI">
+                                <img id="comrade-img-9" data-wix-alt="LOGO_png_non_transparent.png" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='450' viewBox='0 0 600 450'><rect width='600' height='450' fill='%23f1f5f9'/><rect x='24' y='24' width='552' height='402' rx='24' fill='%23ffffff' stroke='%2394a3b8' stroke-width='3' stroke-dasharray='12 10'/><g transform='translate(300, 195)' fill='none' stroke='%2364748b' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><rect x='-36' y='-28' width='72' height='56' rx='10' fill='%23f8fafc'/><circle cx='-12' cy='-8' r='7' fill='%23cbd5e1' stroke='none'/><path d='M-36 16 L-12 -6 L8 12 L20 0 L36 16'/></g><text x='300' y='258' text-anchor='middle' font-family='Inter, sans-serif' font-size='16' font-weight='700' fill='%23334155'>Blank Image Space</text><text x='300' y='282' text-anchor='middle' font-family='Inter, sans-serif' font-size='12' font-weight='600' fill='%2364748b'>Click to Upload Your Photo</text></svg>" alt="LOGO_png_non_transparent.png" class="w-20 h-20 rounded-2xl object-contain p-1 border-2 border-sky-400 shadow-sm shrink-0 bg-indigo-950 cursor-pointer" onclick="openLightbox(this.src, 'Mr. Swaroop Bar — Ghatal Branch')" onerror="this.onerror=null;this.src=window.BLANK_IMG_URI">
                                 <div>
                                     <span class="px-2.5 py-0.5 rounded-full bg-sky-100 text-sky-900 text-[10px] font-bold uppercase">Franchise Owner</span>
                                     <h3 class="font-display text-lg font-bold text-indigo-950 mt-1">Mr. Swaroop Bar</h3>
@@ -3308,7 +3308,7 @@
                         </div>
 
                         <div class="teacher-card p-4 rounded-2xl bg-slate-50 border border-slate-200 flex items-center gap-3.5 card-hover" data-tname="sefali das" data-dnd-item="true">
-                            <img id="teacher-img-7" data-wix-alt="LOGO_png_non_transparent.png" src="data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' width='600' height='450' viewBox='0 0 600 450'&gt;&lt;rect width='600' height='450' fill='%23f1f5f9'/&gt;&lt;rect x='24' y='24' width='552' height='402' rx='24' fill='%23ffffff' stroke='%2394a3b8' stroke-width='3' stroke-dasharray='12 10'/&gt;&lt;g transform='translate(300, 195)' fill='none' stroke='%2364748b' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'&gt;&lt;rect x='-36' y='-28' width='72' height='56' rx='10' fill='%23f8fafc'/&gt;&lt;circle cx='-12' cy='-8' r='7' fill='%23cbd5e1' stroke='none'/&gt;&lt;path d='M-36 16 L-12 -6 L8 12 L20 0 L36 16'/&gt;&lt;/g&gt;&lt;text x='300' y='258' text-anchor='middle' font-family='Inter, sans-serif' font-size='16' font-weight='700' fill='%23334155'&gt;Blank Image Space&lt;/text&gt;&lt;text x='300' y='282' text-anchor='middle' font-family='Inter, sans-serif' font-size='12' font-weight='600' fill='%2364748b'&gt;Click to Upload Your Photo&lt;/text&gt;&lt;/svg&gt;" alt="LOGO_png_non_transparent.png" class="w-14 h-14 rounded-xl object-contain p-1 border border-amber-400 shrink-0 bg-indigo-950 cursor-pointer" onclick="openLightbox(this.src, 'Sefali Das — ANABACUS Teacher')" onerror="this.onerror=null;this.src=window.BLANK_IMG_URI">
+                            <img id="teacher-img-7" data-wix-alt="LOGO_png_non_transparent.png" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='450' viewBox='0 0 600 450'><rect width='600' height='450' fill='%23f1f5f9'/><rect x='24' y='24' width='552' height='402' rx='24' fill='%23ffffff' stroke='%2394a3b8' stroke-width='3' stroke-dasharray='12 10'/><g transform='translate(300, 195)' fill='none' stroke='%2364748b' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><rect x='-36' y='-28' width='72' height='56' rx='10' fill='%23f8fafc'/><circle cx='-12' cy='-8' r='7' fill='%23cbd5e1' stroke='none'/><path d='M-36 16 L-12 -6 L8 12 L20 0 L36 16'/></g><text x='300' y='258' text-anchor='middle' font-family='Inter, sans-serif' font-size='16' font-weight='700' fill='%23334155'>Blank Image Space</text><text x='300' y='282' text-anchor='middle' font-family='Inter, sans-serif' font-size='12' font-weight='600' fill='%2364748b'>Click to Upload Your Photo</text></svg>" alt="LOGO_png_non_transparent.png" class="w-14 h-14 rounded-xl object-contain p-1 border border-amber-400 shrink-0 bg-indigo-950 cursor-pointer" onclick="openLightbox(this.src, 'Sefali Das — ANABACUS Teacher')" onerror="this.onerror=null;this.src=window.BLANK_IMG_URI">
                             <div>
                                 <h3 class="font-display text-sm font-bold text-indigo-950">Sefali Das</h3>
                                 <p class="text-[11px] font-bold text-rose-600 uppercase">Teacher</p>
@@ -3316,7 +3316,7 @@
                         </div>
 
                         <div class="teacher-card p-4 rounded-2xl bg-slate-50 border border-slate-200 flex items-center gap-3.5 card-hover" data-tname="riya mondal" data-dnd-item="true">
-                            <img id="teacher-img-8" data-wix-alt="LOGO_png_non_transparent.png" src="data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' width='600' height='450' viewBox='0 0 600 450'&gt;&lt;rect width='600' height='450' fill='%23f1f5f9'/&gt;&lt;rect x='24' y='24' width='552' height='402' rx='24' fill='%23ffffff' stroke='%2394a3b8' stroke-width='3' stroke-dasharray='12 10'/&gt;&lt;g transform='translate(300, 195)' fill='none' stroke='%2364748b' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'&gt;&lt;rect x='-36' y='-28' width='72' height='56' rx='10' fill='%23f8fafc'/&gt;&lt;circle cx='-12' cy='-8' r='7' fill='%23cbd5e1' stroke='none'/&gt;&lt;path d='M-36 16 L-12 -6 L8 12 L20 0 L36 16'/&gt;&lt;/g&gt;&lt;text x='300' y='258' text-anchor='middle' font-family='Inter, sans-serif' font-size='16' font-weight='700' fill='%23334155'&gt;Blank Image Space&lt;/text&gt;&lt;text x='300' y='282' text-anchor='middle' font-family='Inter, sans-serif' font-size='12' font-weight='600' fill='%2364748b'&gt;Click to Upload Your Photo&lt;/text&gt;&lt;/svg&gt;" alt="LOGO_png_non_transparent.png" class="w-14 h-14 rounded-xl object-contain p-1 border border-amber-400 shrink-0 bg-indigo-950 cursor-pointer" onclick="openLightbox(this.src, 'Riya Mondal — ANABACUS Teacher')" onerror="this.onerror=null;this.src=window.BLANK_IMG_URI">
+                            <img id="teacher-img-8" data-wix-alt="LOGO_png_non_transparent.png" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='450' viewBox='0 0 600 450'><rect width='600' height='450' fill='%23f1f5f9'/><rect x='24' y='24' width='552' height='402' rx='24' fill='%23ffffff' stroke='%2394a3b8' stroke-width='3' stroke-dasharray='12 10'/><g transform='translate(300, 195)' fill='none' stroke='%2364748b' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><rect x='-36' y='-28' width='72' height='56' rx='10' fill='%23f8fafc'/><circle cx='-12' cy='-8' r='7' fill='%23cbd5e1' stroke='none'/><path d='M-36 16 L-12 -6 L8 12 L20 0 L36 16'/></g><text x='300' y='258' text-anchor='middle' font-family='Inter, sans-serif' font-size='16' font-weight='700' fill='%23334155'>Blank Image Space</text><text x='300' y='282' text-anchor='middle' font-family='Inter, sans-serif' font-size='12' font-weight='600' fill='%2364748b'>Click to Upload Your Photo</text></svg>" alt="LOGO_png_non_transparent.png" class="w-14 h-14 rounded-xl object-contain p-1 border border-amber-400 shrink-0 bg-indigo-950 cursor-pointer" onclick="openLightbox(this.src, 'Riya Mondal — ANABACUS Teacher')" onerror="this.onerror=null;this.src=window.BLANK_IMG_URI">
                             <div>
                                 <h3 class="font-display text-sm font-bold text-indigo-950">Riya Mondal</h3>
                                 <p class="text-[11px] font-bold text-rose-600 uppercase">Teacher</p>
@@ -4549,7 +4549,7 @@
                 <div class="flex items-center gap-2">
                     <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
                     <span class="font-bold text-amber-300">Detected Screen:</span>
-                    <span id="qps-live-metrics" class="font-mono text-indigo-100">420×800px • 0.53:1 (MOBILE PORTRAIT • FULL SCREEN)</span>
+                    <span id="qps-live-metrics" class="font-mono text-indigo-100">442×712px • 0.62:1 (MOBILE PORTRAIT • FULL SCREEN)</span>
                 </div>
                 <button type="button" onclick="resetPageAndAspectSettings()" class="px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-amber-300 font-bold text-[11px]">↺ Auto Default</button>
             </div>
@@ -4733,7 +4733,7 @@
                     <div id="admin-actions-scroll-row" class="flex flex-wrap items-center gap-2">
                         <span id="live-publish-status-badge" class="px-2.5 py-1.5 rounded-xl bg-emerald-100 text-emerald-900 border border-emerald-300 text-[11px] font-extrabold flex items-center gap-1.5">
                             <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                            <span id="live-publish-status-text">Published Live (v57 • GitHub #ddf6a2f)</span>
+                            <span id="live-publish-status-text">Published Live (v58 • GitHub #717e7a8)</span>
                         </span>
                         <button type="button" onclick="publishSiteChangesLive()" id="btn-top-publish-live" class="publish-live-btn-glow px-4 py-2 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-500 hover:from-emerald-500 hover:to-teal-400 text-white font-extrabold text-xs shadow-lg transition flex items-center gap-1.5">
                             <span>🚀 Update &amp; Publish to GitHub Pages</span>
@@ -4764,8 +4764,8 @@
                             <div class="space-y-1.5 max-w-2xl">
                                 <div class="flex flex-wrap items-center gap-2">
                                     <span class="px-3 py-0.5 rounded-full bg-emerald-400 text-slate-950 text-[10px] font-extrabold uppercase">Turbo GitHub Pages Publisher</span>
-                                    <span class="text-xs font-mono text-emerald-300">Version v56 • 10/31/2026, 2:37:20 PM</span>
-                                    <a href="https://github.com/anabacus21/anabacus/commit/b527108802f9280e1c839564666cb55e81d0c8b7" target="_blank" rel="noopener" class="px-2.5 py-0.5 rounded-full bg-white/10 hover:bg-white/20 text-amber-300 text-[11px] font-mono underline">Commit #b527108 (12318ms) ↗</a>
+                                    <span class="text-xs font-mono text-emerald-300">Version v57 • 10/31/2026, 2:37:30 PM</span>
+                                    <a href="https://github.com/anabacus21/anabacus/commit/ddf6a2f593984263c2e7b22cb2246baa9bea28b4" target="_blank" rel="noopener" class="px-2.5 py-0.5 rounded-full bg-white/10 hover:bg-white/20 text-amber-300 text-[11px] font-mono underline">Commit #ddf6a2f (4437ms) ↗</a>
                                 </div>
                                 <h3 class="font-display text-xl sm:text-2xl font-extrabold text-white">🚀 Direct Update &amp; Publish to GitHub Pages</h3>
                                 <p class="text-xs text-indigo-100 leading-relaxed">
@@ -4785,9 +4785,7 @@
                             <div class="md:col-span-7 p-5 rounded-3xl bg-slate-50 border border-slate-200 space-y-4">
                                 <div class="flex flex-wrap items-center justify-between gap-2">
                                     <span class="px-3 py-1 rounded-full bg-indigo-950 text-amber-400 text-[10px] font-extrabold uppercase">🐙 GitHub REST API Direct Connection</span>
-                                    <span id="adm-gh-status-pill" class="text-[11px] font-extrabold text-amber-700">
-                                        ● Enter GitHub Repo &amp; Token Below
-                                    </span>
+                                    <span id="adm-gh-status-pill" class="text-[11px] font-extrabold text-emerald-700">● Verified: anabacus21/anabacus (main) in 1624ms</span>
                                 </div>
 
                                 <div class="grid sm:grid-cols-12 gap-3">
@@ -4825,8 +4823,8 @@
                                         <a href="https://github.com/settings/tokens/new?scopes=repo,workflow&amp;description=ANABACUS+Admin+Portal+Publisher" target="_blank" rel="noopener" class="text-[11px] font-extrabold text-indigo-700 hover:underline">🔑 Generate Token on GitHub ↗</a>
                                     </div>
                                     <div class="flex gap-1.5">
-                                        <input type="password" id="adm-gh-token" value="" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx or github_pat_..." autocomplete="off" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs font-mono bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500">
-                                        <button type="button" onclick="toggleGhTokenVisibility()" id="btn-toggle-gh-token" class="px-3 py-2 rounded-xl bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold text-xs shrink-0">👁️ Show</button>
+                                        <input type="text" id="adm-gh-token" value="" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx or github_pat_..." autocomplete="off" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs font-mono bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                                        <button type="button" onclick="toggleGhTokenVisibility()" id="btn-toggle-gh-token" class="px-3 py-2 rounded-xl bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold text-xs shrink-0">🙈 Hide</button>
                                     </div>
                                     <p class="text-[10px] text-slate-500 mt-1">
                                         🔒 Security Guard: Your token is saved strictly in your browser's private storage and is <strong>automatically scrubbed</strong> from <code>index.html</code> before committing so GitHub Secret Scanning never revokes it.
@@ -4861,12 +4859,12 @@
                                     <h4 class="font-display text-base font-extrabold text-indigo-950">How Turbo GitHub Publishing Works</h4>
 
                                     <div id="adm-gh-diag-box" class="p-3.5 rounded-2xl bg-slate-950 text-slate-100 font-mono text-[11px] space-y-1.5 border border-slate-800 shadow-inner">
-                                        <div class="text-amber-400 font-bold">● GitHub Turbo Engine Telemetry</div>
-                                        <div>Status: <span class="text-amber-300">Awaiting Repo + PAT</span></div>
-                                        <div>Cached File SHAs: <span class="text-cyan-300">4 pre-warmed (0ms lookup)</span></div>
-                                        <div>Last Publish Speed: <span class="text-emerald-400">12318 ms</span></div>
-                                        <div>Last Commit: <a href="https://github.com/anabacus21/anabacus/commit/b527108802f9280e1c839564666cb55e81d0c8b7" target="_blank" rel="noopener" class="text-amber-300 underline">#b527108 ↗</a></div>
-                                    </div>
+                    <div class="text-emerald-400 font-bold">✅ GitHub API Verified in 1624 ms!</div>
+                    <div>Repository: <span class="text-white font-bold">anabacus21/anabacus</span> (Public)</div>
+                    <div>Write Access: <span class="text-emerald-400">✓ Push &amp; Commit Permitted</span></div>
+                    <div>Branch &amp; SHA Cache: <span class="text-cyan-300">main • index.html SHA Pre-Cached (6d99b1a)</span></div>
+                    <div>Live GitHub Pages URL: <a href="https://anabacus21.github.io/anabacus/" target="_blank" rel="noopener" class="text-amber-300 underline">https://anabacus21.github.io/anabacus/ ↗</a></div>
+                </div>
 
                                     <ol class="text-xs text-slate-700 space-y-1.5 list-decimal list-inside leading-relaxed">
                                         <li>Click <strong>🔑 Generate Token on GitHub</strong> (select <code>repo</code> scope on Classic token, or <code>Contents: Read &amp; Write</code> on Fine-Grained token).</li>
@@ -6494,9 +6492,9 @@
     "githubFilePath": "index.html",
     "githubCustomDomain": "www.anabacus.com",
     "githubPublishMode": "turbo-dual",
-    "githubLastCommitSha": "ddf6a2f593984263c2e7b22cb2246baa9bea28b4",
-    "githubLastCommitUrl": "https://github.com/anabacus21/anabacus/commit/ddf6a2f593984263c2e7b22cb2246baa9bea28b4",
-    "githubLastPublishMs": 4437,
+    "githubLastCommitSha": "717e7a82e84541d05b2ccaa3a721491e1697fd8c",
+    "githubLastCommitUrl": "https://github.com/anabacus21/anabacus/commit/717e7a82e84541d05b2ccaa3a721491e1697fd8c",
+    "githubLastPublishMs": 2243,
     "siteTitle": "ANABACUS | ANA KNOWLEDGE ARENA PVT. LTD. (AKAPL) - Learn Abacus While Playing",
     "metaDescription": "AKAPL welcomes you in the glorious abacus industry. Learn Abacus While Playing at ANABACUS (ANA KNOWLEDGE ARENA PVT. LTD.), founded by Dr. Ananya Das Mahapatra.",
     "announcementEnabled": false,
@@ -6506,8 +6504,8 @@
     "accentColor": "#f59e0b",
     "liveCloudEndpointUrl": "https://script.google.com/macros/s/AKfycbyRh0dhgQRKXPjo-bAIm4zJG1SZgsoKMGwmjTpEewSf75l2IG2UDHseM7-9z8Bz_ky6/exec",
     "autoPublishOnSave": true,
-    "publishedVersion": 57,
-    "lastPublishedAt": "2026-10-31T09:07:30.329Z",
+    "publishedVersion": 58,
+    "lastPublishedAt": "2026-10-31T14:00:43.620Z",
     "pageSettings": {
         "aspectMode": "fullscreen",
         "maxWidth": "100%",
